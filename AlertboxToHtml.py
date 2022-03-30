@@ -1,6 +1,6 @@
 
 from TikTokLive import TikTokLiveClient as ttcl
-from TikTokLive.types.events import CommentEvent, ConnectEvent, GiftEvent, ShareEvent, LikeEvent, FollowEvent, ViewerCountUpdateEvent
+from TikTokLive.types.events import  ConnectEvent, GiftEvent, ShareEvent, LikeEvent, FollowEvent, ViewerCountUpdateEvent
 import asyncio
 
 tiktokid="memo.live"
