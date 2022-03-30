@@ -3,7 +3,7 @@ from TikTokLive.types.events import CommentEvent, ConnectEvent, GiftEvent, Share
 import tkinter as tkr
 import pyglet
 
-tiktokid="kekeckenan.live"
+tiktokid="ytlosman"
 
 def alerbox(id,gift_type,count):
     animation = pyglet.image.load_animation('giphy.gif')

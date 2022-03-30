@@ -1,0 +1,42 @@
+   
+    <html>
+        <body>
+        <div id="main">
+        <div id="toRemove">
+            <h1>memo63at 5 adet TikTok yolladý </h1>
+            <img src="giphy.gif" alt="this slowpoke moves"  width="250" />
+            <div id="div1"><p></p></div>
+            <div id="parentDiv"><p id="test">Remove me</p></div>
+        </div>
+        </div>
+
+
+        </body>
+    </html>
+    <script>
+    function reload(){
+    location.href=location.href
+    }
+    setInterval('reload()',3000)
+    </script>
+    <script>
+    const para = document.createElement("p");
+    const node = document.createTextNode("This is new.");
+    para.appendChild(node);
+    const element = document.getElementById("div1");
+    element.appendChild(para);
+    </script>
+
+    <script>
+    setTimeout(function () {
+    var parent = document.getElementById("parentDiv");
+    var child = document.getElementById("test");
+    var parent2 = document.getElementById("main");
+    var child2 = document.getElementById("toRemove");
+    console.log("pls work");
+    parent.removeChild(child);
+    parent2.removeChild(child2);
+    setTimeout(arguments.callee, 3000);
+    }, 3000);
+    </script>
+    
